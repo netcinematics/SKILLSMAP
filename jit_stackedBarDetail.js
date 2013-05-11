@@ -10810,6 +10810,7 @@ $jit.ST.Plot.NodeTypes.implement({
           colorArray = node.getData('colorArray'),
           colorLength = colorArray.length,
           stringArray = node.getData('stringArray');
+	  var barDataArray = node.getData('barDataArray'); //!
 
       var ctx = canvas.getCtx(),
           opt = {},
@@ -10820,6 +10821,7 @@ $jit.ST.Plot.NodeTypes.implement({
           aggregates = config.showAggregates,
           showLabels = config.showLabels,
           label = config.Label;
+	  var showBarData = config.showBarData; //!
       
       if (colorArray && dimArray && stringArray) {
         for (var i=0, l=dimArray.length, acum=0, valAcum=0; i<l; i++) {
@@ -10890,6 +10892,13 @@ $jit.ST.Plot.NodeTypes.implement({
               ctx.fillText(node.name, x + width/2, y + label.size/2 + config.labelOffset);
             }
           }
+		  if(showBarData){  //!
+			for(var i=0, acum=0, valAcum=0; i<barDataArray.length; i++){   //!
+				ctx.fillText(barDataArray[i], x + width/2, (y - acum - ((label.size/2)+config.labelOffset)) );
+				acum += (dimArray[i] || 0);
+				valAcum += (valueArray[i] || 0);
+			}	
+		  }
           ctx.restore();
         }
       }
@@ -11219,11 +11228,9 @@ $jit.BarChart = new Class({
         wrapperStyle.color = labelConf.color;
         wrapperStyle.textAlign = 'center';
         aggregateStyle.position = labelStyle.position = 'absolute';
-        
         domElement.style.width = node.getData('width') + 'px';
         domElement.style.height = node.getData('height') + 'px';
         aggregateStyle.left = labelStyle.left =  '0px';
-
         label.innerHTML = node.name;
         
         domElement.appendChild(wrapper);
@@ -11242,7 +11249,6 @@ $jit.BarChart = new Class({
             height = (grouped && !horz)? Math.max.apply(null, dimArray) : node.getData('height'),
             font = parseInt(wrapperStyle.fontSize, 10),
             domStyle = domElement.style;
-            
         
         if(dimArray && valArray) {
           wrapperStyle.width = aggregateStyle.width = labelStyle.width = domElement.style.width = width + 'px';
@@ -11328,11 +11334,13 @@ $jit.BarChart = new Class({
       var val = values[i]
       var valArray = $.splat(values[i].values);
       var acum = 0;
+	  var barData = values[i].barData; //!
       ch.push({
         'id': prefix + val.label,
         'name': val.label,
         'data': {
           'value': valArray,
+		  '$barDataArray': barData, //!
           '$valueArray': valArray,
           '$colorArray': color,
           '$stringArray': name,

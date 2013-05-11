@@ -33,43 +33,53 @@ function init(){
       'values': [
       {
         'label': '2003',
-        'values': [20, 40, 15, 5, 5]
+        'values': [20, 40, 15, 5, 5],
+		'barData': ['a','b','abcdefghij','d','e']
       }, 
       {
         'label': '2004',
-        'values': [30, 10, 45, 10, 5]
+        'values': [30, 10, 45, 10, 5],
+		'barData': ['a','b','c','d','e']
       }, 
       {
         'label': '2005',
-        'values': [38, 20, 35, 17, 5]
+        'values': [38, 20, 35, 17, 5],
+		'barData': ['a','b','c','d','e']
       }, 
       {
         'label': '2006',
-        'values': [58, 10, 35, 32, 5]
+        'values': [58, 10, 35, 32, 5],
+		'barData': ['a','b','c','d','e']
       }, 
       {
         'label': '2007',
-        'values': [55, 60, 34, 38, 5]
+        'values': [55, 60, 34, 38, 5],
+		'barData': ['a','b','c','d','e']
       }, 
       {
         'label': '2008',
-        'values': [26, 40, 25, 40, 5]
+        'values': [26, 40, 25, 40, 5],
+		'barData': ['a','b','c','d','e']
       }, 
       {
         'label': '2009',
-        'values': [26, 40, 25, 40, 5]
+        'values': [26, 40, 25, 40, 5],
+		'barData': ['a','b','c','d','e']
       }, 
       {
         'label': '2010',
-        'values': [26, 40, 25, 40, 5]
+        'values': [26, 40, 25, 40, 5],
+		'barData': ['a','b','c','d','e']
       }, 
       {
         'label': '2012',
-        'values': [26, 40, 25, 40, 5]
+        'values': [26, 40, 25, 40, 5],
+		'barData': ['aaa','b','c','d','e']
       }, 
       {
         'label': '2013',
-        'values': [26, 40, 25, 40, 5]
+        'values': [26, 40, 25, 40, 5],
+		'barData': ['abcdefg','b','c','d','e']
       }]
       
   };
