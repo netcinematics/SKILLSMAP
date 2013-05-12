@@ -10899,7 +10899,7 @@ $jit.ST.Plot.NodeTypes.implement({
 			    if(typeof barData === "string"){
 					ctx.fillText(barData, x + width/2, yPos );
 				}else{
-					var yOffset = label.size + 5;
+					var yOffset = label.size + 6;
 					for(var ii=0; ii < barData.length; ii++){
 						ctx.fillText(barData[ii], x + width/2, yPos - (yOffset * ii));
 					}

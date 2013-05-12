@@ -85,63 +85,74 @@ function init(){
   };  
   
   var skillsetjson = {
-      'label': ['Front-End', 'Full-Stack', 'Design', 'Soft-Skills', 'Training'],
+      'label': ['Front-End', 'Full-Stack', 'Design', 'Soft-Skills', 'Training','Company'],
       'values': [
-      {
-        'label': '2003',
-        'values': [20, 40, 15, 5, 5, 5],
-		'barData': [['Website','DHTML/CSS/JS'],['C++','perl','vim/cygwin','bash','StepDebug'],['Graphics','Patterns'],['Mentorship','SVN'],['Internship','XP/PairP/TDD','MVC-C++','OO']]
-      }, 
-      {
-        'label': '2004',
-        'values': [30, 10, 45, 10, 5],
-		'barData': [['FE'],['AI/NLP','C++/DLLs','TokenDB'],['Patterns','System','Interface','Architect'],['SS'],['OO']]
-      }, 
-      {
-        'label': '2005',
-        'values': [38, 20, 35, 17, 5],
-		'barData': [['Websites','HTML/CSS/JS','Fireworks','Photoshop'],['XML','Clarion','Flash','Bash'],['Logos','Graphics'],['Patterns','System','Interface','Architect'],['Waterfall'],['TR']]
-      }, 
-      {
-        'label': '2006',
-        'values': [58, 10, 35, 32, 5],
-		'barData': [['HTML/CSS/JS','AJAX/XML','Templates'],['encryption','C++ DLLs','Ant','Oracle SQL','C#/ASP.NET/IIS'],['Modules'],['Mentorship','SVN','Iterative'],['C#/ASP']]
-      }, 
-      {
-        'label': '2007',
-        'values': [55, 60, 34, 38, 5],
-		'barData': [['HTML/CSS/JS','ExtJS','OOJS','AJAX/JSON','SVG/DOM','jQuery','Firebug','CSS Themes','SPA/RIA'],['PL/SQL','J2EE/JAVA','StepDebug','FullStack'],['UML','Graphics','Patterns','Architect'],['Mentorship'],['J2EE','OOJS','AJAX/SVG']]
-      }, 
-      {
-        'label': '2008',
-        'values': [26, 40, 25, 40, 5],
-		'barData': [['HTML/CSS/JS','ExtJS','OOJS','AJAX/JSON','Controls','Buttons','Silverlight','ActionScript','SVG Themes','Firebug','SPA/RIA'],['OC4J','SQL','DWR'],['UML','Logos','Interaction','Interface','API'],['Mentorship','Mentor','Agile'],['RMOUG','NewTech','SQLCert']]
-      }, 
-      {
-        'label': '2009',
-        'values': [26, 40, 25, 40, 5],
-		'barData': [['HTML/CSS/JS','jQuery','ActionScript','TwitterAPI','PaypalAPI','GoogleMapAPI','Components','SPA/RIA'],['Apache','GlassFish','SSL','ecommerce','PHP/MySQL',],['UML','Architect'],['GitHub','Mentor','TeamLead','Agile'],['NewTech','TechStars']]
-      }, 
-      {
-        'label': '2010',
-        'values': [26, 40, 25, 40, 5],
-		'barData': [['HTML/CSS/JS','ActionScript','AWS API','Analytics','TDD/MVC','Components','VideoPlayer','CSS Themes'],['JSP','CrowdSource','H264 Video'],['Graphics'],['SS'],['TR']]
-      }, 
-      {
-        'label': '2011',
-        'values': [26, 40, 25, 40, 5],
-		'barData': [['HTML/CSS/JS','AJAX/JSON','BackboneJS','Templates','Analytics','jQuery','Mobile','AdobeEdge','XHTML','MicroJS','DevTools','RIA'],['Hudson','Arduino','C++'],['UX'],['Mentor','PivotalT','Agile'],['jQueryDEN','HTML5DEN','RichWebExp']]
-      }, 
-      {
-        'label': '2012',
-        'values': [26, 40, 25, 40, 5],
-		'barData': [['HTML5/CSS3/JS','AJAX/JSON','MVC/ExtJS','SASS/Compass','jQueryMobile','RWD','PrototypeJS','TabletApp','JS Charts'],['Gimp','GruntJS','Ant Build','REST','CouchDB','NodeJS'],['RWD','UX'],['GitHub','TeamLead','PairPro','Agile'],['Presenter','OWASP','TDD','HTML5DEN','HTML5Camp','JSMastrCls']]
-      }, 
       {
         'label': '2013',
         'values': [26, 40, 25, 40, 5],
-		'barData': [['HTML5/CSS3/JS','AJAX/JSON','Web Perf','Front Build','AMD','Components','RIA'],['Bash','JSP','REST'],['Modules','System','Architect','UX'],['GitHub','Mentor','TeamLead','PairPro','Agile'],['Presenter','Web Perf','PhoneGap','jQueryMobl','SAAS/git','CoffeeScr','BackboneJS']]
-      }]
+		'barData': [['HTML5/CSS3/JS','AJAX/JSON','Web Performance','Front Build','AMD','Components','MVC-ExtJS','RIA'],['Bash','JSP','REST'],['Modules','System Design','Architecture','UX Design'],['GitHub','Mentor','Team Lead','Pair Programming','Agile'],['Presenter','Web Performance','PhoneGap','jQueryMobile','SAAS/git','CoffeeScript','BackboneJS'],['FirstBank']]
+      },
+      {
+        'label': '2012',
+        'values': [26, 40, 25, 40, 5],
+		'barData': [['HTML5/CSS3/JS','AJAX/JSON','MVC-ExtJS','SASS/Compass','jQueryMobile','RWD','PrototypeJS','TabletApp','JS Charts'],['Gimp','GruntJS','Ant Build','REST','CouchDB','NodeJS'],['RWD','UX'],['GitHub','Team Lead','Pair Programming','Agile'],['Presenter','OWASP/InfoSec','TDD','HTML5Denver','HTML5Camp','JSMaster Class'],['FirstBank']]
+      },	  
+      {
+        'label': '2011',
+        'values': [26, 40, 25, 40, 5],
+		'barData': [['XHTML/CSS/JS','AJAX/JSON','BackboneJS','Templates','Analytics','jQuery','Mobile','AdobeEdge','MicroJS','DevTools'],['Hudson','Arduino','C++'],['UX'],['Mentor','PivotalTracker','Agile'],['jQueryDenver','HTML5Denver','RichWebExp'],['Retel Tech','FirstBank']]
+      },	  
+      {
+        'label': '2010',
+        'values': [26, 40, 25, 40, 5],
+		'barData': [['HTML/CSS/JS','ActionScript','Amazon AWS API','Analytics','TDD','MVC-Cairngorm','UI Automation','Drag And Drop','InfiniteScroll','TimeLine','Components:','VideoPlayer','CSS Themes','RIA'],['JSP','CrowdSource','H.264 Video'],['Graphics'],[],[],['Retel Tech']]
+      },	  
+      {
+        'label': '2009',
+        'values': [26, 40, 25, 40, 5],
+		'barData': [['HTML/CSS/JS','jQuery','ActionScript','Twitter API','Paypal API','GoogleMap API','Components','SPA/RIA'],['Apache','GlassFish','SSL','ecommerce','PHP/MySQL',],['UML','Architecture'],['GitHub','Mentor','Team Lead','Agile'],['NewTechMeetup','TechStars'],['SBS/TWC','Retel Tech']]
+      },	  
+      {
+        'label': '2008',
+        'values': [26, 40, 25, 40, 5],
+		'barData': [['HTML/CSS/JS','ExtJS','OOJS','AJAX/JSON','Controls','Buttons','Silverlight','ActionScript','SVG Themes','Firebug','SPA/RIA'],['OC4J','SQL','DWR'],['UML','Logos','Interaction','UI Design','API'],['Mentorship','Mentor','Agile'],['RMOUG','NewTechMeetup','SQL Cert'],['SBS/TWC']]
+      },	  
+      {
+        'label': '2007',
+        'values': [55, 60, 34, 38, 5],
+		'barData': [['HTML/CSS/JS','ExtJS','OOJS','AJAX/JSON','SVG/DOM','jQuery','Firebug','CSS Themes','SPA/RIA'],['PL/SQL','J2EE/JAVA','StepDebug IE','FullStack'],['UML','Graphics','Design Patterns','Architecture'],['Mentorship'],['J2EE','OOJS','AJAX/SVG'],['SBS/GE']]
+      },	  
+      {
+        'label': '2006',
+        'values': [58, 10, 35, 32, 5],
+		'barData': [['HTML/CSS/JS','AJAX/XML','Templates'],['encryption','C++ DLLs','Ant','Oracle SQL','C#/ASP.NET/IIS'],['Modules'],['Mentorship','SVN','Iterative'],['C#/ASP'],['SBS/GE']]
+      },	  
+      {
+        'label': '2005',
+        'values': [38, 20, 35, 17, 5],
+		'barData': [['HTML/CSS/JS','Fireworks','Photoshop'],['XML','Clarion','Flash','Bash'],['Logos','Graphics'],['Design Patterns','System Design','UI Design','Architecture'],[],['Websites','RMTEC']]
+      },	  
+      {
+        'label': '2004',
+        'values': [30, 10, 45, 10, 5],
+		'barData': [[],['AI/NLP','C++/DLLs','Custom DB'],['Modules','UML','Design Patterns','System Design','UI Design','Architecture'],[],['OO'],['Tokenizr']]
+      },	  
+      {
+        'label': '2003',
+        'values': [20, 40, 15, 5, 5, 5],
+		'barData': [['DHTML/CSS/JS','Website'],['C++','vim/cygwin','bash','StepDebug C++'],['Graphics','Design Patterns'],['Mentorship','SVN'],['MVC-C++','OO','TDD','Pair Programming','XP'],['SeldenSystems']]
+      },	  
+      {
+        'label': '2002',
+        'values': [20, 40, 15, 5, 5, 5],
+		'barData': [['DHTML/CSS/JS','Website'],['C++','vim/cygwin','bash','StepDebug C++'],['Graphics'],['Mentorship'],['OO','MVC-C++','Pair Programming'],['SeldenSystems']]
+      }	  ,	  
+      {
+        'label': '2001',
+        'values': [20, 40, 15, 5, 5, 5],
+		'barData': [['DHTML/CSS/JS','Website'],['C++','perl'],['Graphics'],['Mentorship'],['Internship'],['SeldenSystems']]
+      }	  
+	  ]
       
   };
   
