@@ -95,12 +95,12 @@ function init(){
       {
         'label': '2012',
         'values': [26, 40, 25, 40, 5],
-		'barData': [['HTML5/CSS3/JS','AJAX/JSON','MVC-ExtJS','SASS/Compass','jQueryMobile','RWD','PrototypeJS','TabletApp','JS Charts'],['Gimp','GruntJS','Ant Build','REST','CouchDB','NodeJS'],['RWD','UX'],['GitHub','Team Lead','Pair Programming','Agile'],['Presenter','OWASP/InfoSec','TDD','HTML5Denver','HTML5Camp','JSMaster Class'],['FirstBank']]
+		'barData': [['HTML5/CSS3/JS','AJAX/JSON','MVC-ExtJS','SASS/Compass','jQueryMobile','RWD','PrototypeJS','TabletApp','JS Charts'],['Gimp','GruntJS','Ant Build','REST','CouchDB','NodeJS'],['RWD','UX Design'],['GitHub','Team Lead','Pair Programming','Agile'],['Presenter','OWASP/InfoSec','TDD','HTML5Denver','HTML5Camp','JSMaster Class'],['FirstBank']]
       },	  
       {
         'label': '2011',
         'values': [26, 40, 25, 40, 5],
-		'barData': [['XHTML/CSS/JS','AJAX/JSON','BackboneJS','Templates','Analytics','jQuery','Mobile','AdobeEdge','MicroJS','DevTools'],['Hudson','Arduino','C++'],['UX'],['Mentor','PivotalTracker','Agile'],['jQueryDenver','HTML5Denver','RichWebExp'],['Retel Tech','FirstBank']]
+		'barData': [['XHTML/CSS/JS','AJAX/JSON','BackboneJS','Templates','Analytics','jQuery','Mobile','AdobeEdge','MicroJS','DevTools'],['Hudson','Arduino','C++'],['UI Design','UX Design'],['Mentor','PivotalTracker','Agile'],['jQueryDenver','HTML5Denver','RichWebExp'],['Retel Tech','FirstBank']]
       },	  
       {
         'label': '2010',
