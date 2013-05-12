@@ -10892,11 +10892,19 @@ $jit.ST.Plot.NodeTypes.implement({
               ctx.fillText(node.name, x + width/2, y + label.size/2 + config.labelOffset);
             }
           }
-		  if(showBarData){  //!
-			for(var i=0, acum=0, valAcum=0; i<barDataArray.length; i++){   //!
-				ctx.fillText(barDataArray[i], x + width/2, (y - acum - ((label.size/2)+config.labelOffset)) );
+		  if(showBarData){  //! Algorithm-For-Displaying-Text-Data-Within-The-Bar-Chart-.
+			for(var i=0, acum=0; i<barDataArray.length; i++){   //!
+			    var barData = barDataArray[i];
+				var yPos = (y - acum - ((label.size/2)+(config.labelOffset/2)));
+			    if(typeof barData === "string"){
+					ctx.fillText(barData, x + width/2, yPos );
+				}else{
+					var yOffset = label.size + 5;
+					for(var ii=0; ii < barData.length; ii++){
+						ctx.fillText(barData[ii], x + width/2, yPos - (yOffset * ii));
+					}
+				}
 				acum += (dimArray[i] || 0);
-				valAcum += (valueArray[i] || 0);
 			}	
 		  }
           ctx.restore();
@@ -11318,7 +11326,7 @@ $jit.BarChart = new Class({
   loadJSON: function(json) {
     if(this.busy) return;
     this.busy = true;
-    
+	
     var prefix = $.time(), 
         ch = [], 
         delegate = this.delegate,
@@ -11335,6 +11343,7 @@ $jit.BarChart = new Class({
       var valArray = $.splat(values[i].values);
       var acum = 0;
 	  var barData = values[i].barData; //!
+	  
       ch.push({
         'id': prefix + val.label,
         'name': val.label,
